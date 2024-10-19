@@ -1,0 +1,156 @@
+/* Import font css */
+@import url("./assets/fonts/fonts.css");
+
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.blur-image {
+  filter: blur(10px);
+  transition: filter 0.3s ease-out;
+}
+
+.loaded-image {
+  filter: none;
+}
+
+@media screen and (max-width: 640px) and (orientation: landscape) {
+  .landscape-height-fix {
+    min-height: 30vh;
+
+  }
+
+  .landscape-font-fix {
+    font-size: 1rem;
+  }
+}
+
+.slide-in-bottom {
+  -webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-out-bottom {
+  -webkit-animation: slide-out-bottom 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: slide-out-bottom 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@-webkit-keyframes slide-out-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+}
+
+@keyframes slide-out-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 386px) {
+  .adjusted-360 h3 {
+    font-size: large;
+    margin-right: 10px;
+  }
+
+  .advantagediv {
+    margin-left: 10%;
+  }
+
+  .sparky {
+    width: 16px;
+  }
+}
+
+
+.circle {
+  position: absolute;
+}
+
+@keyframes squish {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2, 0.8);
+  }
+}
+
+.squish {
+  animation: squish 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 344px) {
+
+  /* CSS rules for the Samsung Z Fold 5 small display */
+  .small-display {
+    line-height: 18px;
+  }
+
+  .small-display-Ready2activ8 {
+    font-size: 23px;
+  }
+}

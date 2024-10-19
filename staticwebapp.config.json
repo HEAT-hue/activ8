@@ -1,0 +1,30 @@
+{
+  "routes": [
+    {
+      "route": "/static/*",
+      "headers": {
+        "cache-control": "must-revalidate, max-age=15770000"
+      }
+    },
+    {
+      "route": "/index.html",
+      "headers": {
+        "cache-control": "no-cache"
+      }
+    },
+    {
+      "route": "/*",
+      "serve": "/index.html",
+      "statusCode": 200
+    }
+  ],
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": [
+      "/static/*",
+      "/manifest.json",
+      "/robots.txt",
+      "/*.{png,jpg,gif,svg,ico}"
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+.slider-container {
+    position: relative;
+    width: 200%; /* Double the width to allow for seamless looping */
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.marquee {
+    display: flex;
+    justify-content: space-around;
+    width: 100%; /* Take full width */
+    animation: marquee 30s linear infinite; /* Slowed down to smoothen the animation */
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.sliding-images {
+    display: block;
+    max-height: 8vh; /* Keeps the images at a reasonable size */
+    margin: auto; /* Centers the images vertically */
+    object-fit: contain; /* Ensures images are properly scaled within the container */
+}
+
+.inline-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Ensure the container height is consistent */
+    padding: 0 10px; /* Reduced padding for better responsiveness */
+}

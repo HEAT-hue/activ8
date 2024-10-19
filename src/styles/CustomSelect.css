@@ -1,0 +1,39 @@
+
+.ant-select-focused .ant-select-selector,
+.ant-select-selector:hover,
+.ant-select-selector:focus,
+.ant-select-selector:active,
+.ant-select-open .ant-select-selector {
+  border-color: #d9d9d9 !important;
+  box-shadow: none !important;
+}
+
+.ant-select-item-option {
+  transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition for color and background */
+}
+
+.ant-select-item-option:hover {
+  background-color: transparent !important; /* Remove the hover background color */
+  color: #956F3E !important; /* Change the text color to red on hover */
+  outline: none !important; /* Remove any outline */
+  box-shadow: none !important; /* Remove any shadow */
+}
+
+.ant-select-item-option-active {
+  background-color: transparent !important; /* Remove the active background color */
+  color: #956F3E !important; /* Ensure the text stays red when active */
+  outline: none !important; /* Remove any outline */
+  box-shadow: none !important; /* Remove any shadow */
+}
+
+.ant-select-item-option:focus {
+  outline: none !important; /* Remove focus outline */
+  box-shadow: none !important; /* Remove any focus shadow */
+}
+
+.ant-select-item-option-selected {
+  background-color: transparent !important; /* Ensure selected item has no background */
+  color: text-#956F3E !important; /* Ensure selected item text is red */
+  outline: none !important; /* Remove any outline */
+  box-shadow: none !important; /* Remove any shadow */
+}

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Transition } from '@headlessui/react';
-import BouncingCircles from './BouncingCircles';
+// import BouncingCircles from './BouncingCircles';
 
 const Waitlist = () => {
   const [isLoading, setIsLoading] = useState(false);

@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState, useEffect } from 'react';
 import { Transition } from '@headlessui/react';
-import BouncingCircles from './BouncingCircles';
+// import BouncingCircles from './BouncingCircles';
 
 const CountdownComponent = () => {
   const [timeLeft, setTimeLeft] = useState<any | null>(null);
@@ -70,7 +70,7 @@ const CountdownComponent = () => {
     <div className="relative flex flex-col items-center justify-between h-screen bg-[#EBC553] overflow-hidden p-4 min-h-[768px]">
       {/* SVG Backgrounds */}
       <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
-        <BouncingCircles />
+        {/* <BouncingCircles /> */}
 
       </div >
 

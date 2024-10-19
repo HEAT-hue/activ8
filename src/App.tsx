@@ -1,4 +1,4 @@
-import { Suspense, useEffect } from 'react';
+import { Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import "./App.css";
 import Navbar from './components/Navbar';
@@ -24,9 +24,9 @@ import ContactUs from './pages/ContactUs';
 // const ContactUs = lazy(() => import('./pages/ContactUs'));
 
 function App() {
-  useEffect(() => {
-    document.title = 'Activ8 - Home';
-  }, []);
+  // useEffect(() => {
+  //   document.title = 'Activ8 - Home';
+  // }, []);
 
 
   return (

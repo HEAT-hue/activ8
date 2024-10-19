@@ -1,4 +1,4 @@
-import { Suspense } from 'react';
+import { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import "./App.css";
 import Navbar from './components/Navbar';
@@ -8,20 +8,20 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import ScrollToTop from './components/ScrollToTop';
 import { NAVIGATION } from './lib/definition';
-import Home from './pages/Home';
-import AboutUs from './pages/AboutUs';
-import Partners from './pages/Partners';
-import Subscription from './pages/Subscription';
-import FAQS from './pages/FAQS';
-import ContactUs from './pages/ContactUs';
+// import Home from './pages/Home';
+// import AboutUs from './pages/AboutUs';
+// import Partners from './pages/Partners';
+// import Subscription from './pages/Subscription';
+// import FAQS from './pages/FAQS';
+// import ContactUs from './pages/ContactUs';
 
 // Lazy load pages
-// const Home = lazy(() => import('./pages/Home'));
-// const AboutUs = lazy(() => import('./pages/AboutUs'));
-// const Partners = lazy(() => import('./pages/Partners'));
-// const Subscription = lazy(() => import('./pages/Subscription'));
-// const FAQS = lazy(() => import('./pages/FAQS'));
-// const ContactUs = lazy(() => import('./pages/ContactUs'));
+const Home = lazy(() => import('./pages/Home'));
+const AboutUs = lazy(() => import('./pages/AboutUs'));
+const Partners = lazy(() => import('./pages/Partners'));
+const Subscription = lazy(() => import('./pages/Subscription'));
+const FAQS = lazy(() => import('./pages/FAQS'));
+const ContactUs = lazy(() => import('./pages/ContactUs'));
 
 function App() {
   // useEffect(() => {

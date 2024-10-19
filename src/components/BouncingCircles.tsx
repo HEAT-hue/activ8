@@ -161,10 +161,10 @@ const Circle: React.FC<CircleProp> = React.memo(({ size, strokeWidth, zIndex, cl
 const BouncingCircles: React.FC = () => {
   return (
     <div className="relative w-full h-screen overflow-hidden">
-      <Circle size={500} strokeWidth={90} zIndex={3} className="hidden md:block" />
-      <Circle size={500} strokeWidth={90} zIndex={2} className="hidden md:block" />
-      <Circle size={250} strokeWidth={45} zIndex={2} className="block" />
-      <Circle size={250} strokeWidth={45} zIndex={1} className="block" />
+      <Circle size={500} strokeWidth={40} zIndex={3} className="hidden md:block" />
+      <Circle size={500} strokeWidth={40} zIndex={2} className="hidden md:block" />
+      <Circle size={250} strokeWidth={40} zIndex={2} className="block" />
+      <Circle size={250} strokeWidth={40} zIndex={1} className="block" />
     </div>
   );
 };

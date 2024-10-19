@@ -41,7 +41,7 @@ const Waitlist = () => {
     <div className="relative flex flex-col items-center justify-between h-scree bg-[#EBC553] overflow-hidden p-4">
       {/* SVG Backgrounds */}
       <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
-        <BouncingCircles />
+        {/* <BouncingCircles /> */}
 
       </div>
 
